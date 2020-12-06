@@ -7,7 +7,6 @@ for (const group of data) {
     val !== ""
   );
   const uniqueQs: string = "".concat(
-    "",
     ...userAns.map((ans: string): string[] => ans.split("")).flat().filter(
       (val: string, index: number, src: string[]): boolean => {
         return src.indexOf(val) === index;
